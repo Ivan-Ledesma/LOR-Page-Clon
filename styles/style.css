@@ -1,0 +1,748 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    color: #Fff;
+}
+
+hr{
+    width: 90%;
+    border-width: 0;
+    border-top: 1px solid #c49250;
+    margin-bottom: 20px;
+    margin: 0 auto;
+}
+/*Main*//*Main*//*Main*//*Main*/
+.main{
+    width: 100%;
+    height: auto;
+}
+/*Main*//*Main*//*Main*//*Main*/
+.nav__box{
+    position: fixed;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    padding: 10px;
+    font-size: 12em;
+    background-color: #111;
+}
+
+.nav__box .nav__box--home{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav__box .nav__box--home .responsive-home{
+    display: none;
+}
+.nav__box .nav__box--home .nav__box--home--oficialPage{
+    padding: 10px 15px;
+    list-style: none;
+}
+
+.nav__box .nav__box--home .nav__box--home--oficialPage:hover{
+    background-color: #65635e;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+.nav__box > ul > li{
+    list-style: none;
+}
+
+.nav__box .nav__box--sections{
+    display: none;
+}
+
+.nav__box .nav__box--sections li a{
+    padding: 10px 15px;
+}
+.nav__box .nav__box--sections li a:hover{
+    background-color: #65635e;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.menu-desplegable{
+    max-width: 40px;
+
+}
+.menu-desplegable > a > img{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+/*ESTILOS DEL HOME / PRIMERA SECTION DE LA PAGINA*/
+.home{
+    width: 100%;
+    height: auto;
+}
+
+.home__content-box{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background: linear-gradient(transparent 5%,transparent 50%,#e4e0da,#ffffff);
+}
+.home__content-box .home__video{
+    min-width: 480px;
+
+}
+.home__content-box .home__video video{
+    width: 100%;
+    height: 100vw;
+    max-height: 568px;
+    min-height: 530px;
+    object-fit: cover;
+    position: absolute;
+    padding-top: 10px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.home__button{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home__button ul{
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}   
+
+.home__button .play-now{
+    font-size: 3.5rem;
+    padding: 10px 20px;
+    background-color: #c49250;
+    box-shadow: #65635e;
+    border-radius: 5px;
+    background-image: linear-gradient(180deg,rgba(229,167,87,0) 50%,rgba(152,111,69,.4) 80%,#986f45 101%);
+}
+
+.home__button .play-now:hover{
+    background-color: #e8ac5f;
+}
+.home__button p{
+    padding: 10px 0;
+    font-size: 2.5rem;
+}
+
+.home__button ul li{
+    width: 200px;
+    text-decoration: none;
+    list-style: none;
+    padding: 0 20px;
+}   
+
+/*Caja vacio debajo del home */
+.empty-box{
+    height: 10vh;
+    position: relative;
+    background-color: #ffffff;
+}
+/*ESTILOS DEL HOME / PRIMERA SECTION DE LA PAGINA*/
+
+
+/* Explicación del juego section*/
+.body__background{
+    background: url("../imgs/background-dark-grey-noise.jpg");
+    height: auto;
+}
+
+.section__game--box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.section__game--box__video{
+    position: relative;
+    top: -20px;
+    width: 80%;
+    min-width: 320px;
+    height: 350px;
+    max-width: 90%;
+    flex-shrink: 0;
+    padding: 0px 20px;
+    z-index: 2;
+}
+.section__game--box__video iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.section__game--box__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+    padding: 0px 20px;
+}
+.section__game--box__text h2{
+    font-weight: 400;
+    color: #c49250;
+    font-size: 4rem;
+}
+
+.section__game--box__text p{
+    color: #fff;
+    font-weight:lighter;
+    font-size: 2.5rem;
+}
+
+.section__game-cards{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 80px 0;
+}
+
+.section__game-cards--card{
+    position: relative;
+    z-index: 1;
+    padding-bottom: 20px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 380px;
+    height: 550px;
+    background-color: #c6b7a0;
+}
+.section__game-cards--img{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    object-position: 50% 0;
+}
+.section__game-cards--empty{
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    background: linear-gradient(transparent 10%,transparent 60%,#e1cfb559,#c6b7a0);
+}
+.section__game-cards--text{
+    color: #5e442d;
+    font-weight: 200;
+    font-size: 3.2rem;
+    width: 90%;
+    height: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+.section__game-cards--text hr{
+    color: #5e442d;
+    margin-top: 10px;
+}
+.section__game-cards--text p{
+    color: black;
+}
+.section__game-cards--text h3{
+    font-size: 3rem;
+}
+
+/*Campeones*/
+
+.section__champions{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.section__champions--title{
+    color: #c49250;
+    text-align: center;
+}
+.section__champions--title > h2 {
+    padding-bottom: 25px;
+    font-size: 4rem;
+}
+.section__champions--title > p {
+    font-size: 3rem;
+    padding-bottom: 25px;
+}
+
+.section__champions__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section__champions--content{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.section__champions--content-imgs{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section__champions--content-imgs figure img{
+    width: 100%;
+}
+
+.section__champions--content-description{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: -40px;
+    padding: 10px 0;
+    border: 1px solid #c49250;
+    color: #c49250;
+    background-color: rgba(31,28,31,.94);
+}
+.section__champions--content-description div{
+    display: flex;
+    justify-content: space-around;
+}
+.section__champions--content-description hr{
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+.section__champions--content-description{
+    font-size: 2.5rem;
+}
+.section__champions--content-description--text{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+    font-size: 2rem;
+    padding-bottom: 10px;
+}
+.section__champions--content-description--text h2{
+    font-size: 2.5rem;
+}
+
+
+/*Regiones */
+
+.section__regions{
+    width: 100%;
+    height: auto;
+    padding: 80px 0;
+}
+
+.section__regions--title{
+    text-align: center;
+    width: 100%;
+    color: #c49250;
+}
+.section__regions--title h2{
+    font-size: 3rem;
+}
+
+.section__regions--title > *{
+    padding-bottom: 20px;
+    font-size: 2.4rem;
+}
+
+.section__regions--content{
+    background-color: #34312e;
+    max-width: 90%;
+    height: auto;
+    min-height: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;    
+    margin-top: 40px;
+}
+
+.section__regions--content--title{
+    color: #c6b7a0;
+    padding: 30px 0;
+    width: 100%;
+    text-align: center;
+    background-color: #282624;
+    font-size: 4rem;
+}
+.section__regions--content--title > h3{
+    padding-bottom: 10px;
+}
+
+.section__regions--content--cards{
+    width: 100%;
+    padding: 40px 0;
+    border-top: 1px solid #c49250;
+    border-bottom: 1px solid #c49250;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+    grid-gap: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+.section__regions--content--cards > img{
+    width: 100%;
+    max-width: 350px;
+}
+/*-----------------*/
+
+.section__art{
+    width: 100%;
+    height: auto;
+    padding: 40px 0;
+    text-align: center;
+    font-size: 2rem;
+}
+.section__art > h2{
+    text-align: center;
+    color: #c49250;
+    font-size: 4rem;
+}
+.section__art > h3{
+    color: #c6b7a0;
+    padding-top: 20px;
+    font-size: 3rem;
+}
+
+.section__art--ilustrations{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px 0;
+    font-size: 6rem;
+}
+.section__art--ilustrations--figures{
+    width: 500px;
+    color: #c6b7a0;
+    border-bottom: 1px solid #e8ac5f;
+}
+
+.section__art--ilustrations--figures >*{
+    padding: 8px 0;
+    font-size: 3.5rem;
+}
+.section__art--ilustrations--figures > img{
+    width: 100%;
+}
+.section__art--ilustrations--figures > p{
+    width: 100%;
+}
+
+.section__art--ilustrations--figures > div{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section__art--ilustrations--figures > div > a{
+    border: 1px solid #c6b7a0;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+.section__art--ilustrations--figures > div > a:hover{
+    border: 1px solid #c49250;
+    background-color: #c49250;
+    color: #111;
+}
+/*Footer*/
+
+.footer{
+    background-color: rgb(67, 67, 67);
+    position: relative;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 3rem;
+}
+
+.footer__copyright{
+    padding: 10px 0;
+    font-size: 2.4rem;
+}
+.footer__links-socialNetworks{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer__links-socialNetworks > li{
+    list-style: none;
+    padding: 10px 0;
+
+}
+.footer__links-socialNetworks > li > a{
+    list-style: none;
+    padding: 10px 0;
+}
+.footer__links-socialNetworks > li > a >img{
+    width: 100%;
+    height: 80px;
+}
+
+.footer__links-externalLinks{
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 30px;
+    width: 100%;
+}
+.footer__links-externalLinks > li{
+    list-style: none;
+}
+.footer__links-externalLinks > li > a{
+    text-decoration: none;
+    padding: 8px 12px;
+    color: #111;
+    font-size: 2.2rem;
+}
+
+/* PAGINA EXTRA DE NOTICIAS*//* PAGINA EXTRA DE NOTICIAS*//* PAGINA EXTRA DE NOTICIAS*/
+/* PAGINA EXTRA DE NOTICIAS*//* PAGINA EXTRA DE NOTICIAS*//* PAGINA EXTRA DE NOTICIAS*/
+
+
+.main__news{
+    width: 100%;
+    height: 100vh;
+}
+
+.main__header{
+    padding: 70px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.main__header > img{
+    width: 100%;
+}
+
+.main__header > h1{
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.main__sectionsNews{
+    width: 100%;
+    padding-top: 40px;
+    font-size: 7rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main__sectionNews--box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    color: #Fff;
+    padding: 40px 0;
+    border-bottom: 1px solid #c49250;
+}
+
+.main__sectionNews--box >img{
+    width: 100%;
+    max-width: 600px;
+}
+
+.main__sectionNews--box > div > h3{
+    color: #c49250;
+    padding: 10px 0;
+    font-size: 1.1em;
+}
+.main__sectionNews--box > div > p{
+    color: #c49250;
+    padding: 10px 0;
+    font-size: 0.8em;
+}
+
+/*MEDIA QUERYS*//*MEDIA QUERYS*//*MEDIA QUERYS*//*MEDIA QUERYS*/
+
+@media screen and (min-width: 480px){
+    .nav__box .nav__box--home .responsive-home{
+        display: flex!important;
+    }
+    .section__game--box__video{
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .home__content-box .home__video video{
+        width: 100%;
+        max-height: 568px;
+        top: 0;
+        left: 0;
+    }
+
+    .footer__links-externalLinks > li > a:hover{
+        background-color: #c6b7a0;
+        padding: 8px 12px;
+        border-radius: 4px;
+        color: #111;
+    }
+    .section__regions--content--cards{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 1fr 1fr;
+    }
+    .main__header > h1{
+        font-size: 6rem;
+    }
+
+}
+@media screen and (min-width: 1024px){
+    .nav__box--sections{
+        width: 50%;
+        display: flex!important;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .menu-desplegable{
+        display: none;
+    }
+    .nav__box--home{
+        max-width: 50%;
+    }
+    .section__game--box__text p{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .section__champions--content-description{
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .section__champions--content-description p{
+        font-size: 2.8rem;
+    }
+    .section__champions--content-description--text p{
+        font-size: 2.5rem;
+    }
+    .section__champions--content-description--text h2{
+        font-size: 4rem;
+    }
+    .section__champions--content-description--text h2{
+        font-size: 4rem;
+    }
+
+    .section__regions--title p{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .footer__copyright{
+        padding: 20px 0;
+    }
+    .footer__links-externalLinks > li > a{
+        font-size: 2.5rem;
+    }
+    /* Pagina de noticias*/
+    .main__sectionNews--box{
+        justify-content: center;
+        flex-direction: row;
+    }
+    .main__sectionNews--box > img{
+        max-width: 50%;
+        padding-right: 10px;
+    }
+
+}
+
+@media screen and (min-width: 1280px){
+    .nav__box--sections{
+        max-width: 40%;
+        font-size: 6rem;
+    }
+
+    .nav__box--home{
+        max-width: 40%;
+        font-size: 6rem;
+    }
+
+    .section__game--box__video{
+        height: 440px;
+    }
+    .section__game--box__text{
+        padding: 40px 20px;
+        gap: 40px;
+    }
+    .section__champions--title{
+        padding: 40px 0;
+    }
+    .section__champions--content-imgs{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .section__champions--content-description{
+        width: 80%;
+    }
+    .section__regions--title p{
+        padding: 20px 0;
+    }
+    .section__regions--content--cards{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 1fr;
+    }
+    .section__art--ilustrations{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .section__art--ilustrations--figures{
+        width: auto;
+        max-width: 800px;
+    }
+    .footer__links-externalLinks{
+        justify-content: space-evenly;
+    }
+}
