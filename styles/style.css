@@ -18,75 +18,49 @@ hr{
     margin-bottom: 20px;
     margin: 0 auto;
 }
-/*Main*//*Main*//*Main*//*Main*/
-.main{
-    width: 100%;
-    height: auto;
+
+.carousel{
+    background-color: #c49250;
+    width: 95%;
 }
-/*Main*//*Main*//*Main*//*Main*/
+
+.carousel-item{
+    min-height: 300px;
+}
+.carousel-item img{
+    width: 100%;
+}
+
 .nav__box{
     position: fixed;
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     z-index: 10;
-    padding: 10px;
-    font-size: 12em;
+    padding-right: 10px;
     background-color: #111;
+    padding: 10px 5px;
 }
 
-.nav__box .nav__box--home{
+.nav__box ul li a{
+    font-size: 2.2rem;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-.nav__box .nav__box--home .responsive-home{
-    display: none;
-}
-.nav__box .nav__box--home .nav__box--home--oficialPage{
-    padding: 10px 15px;
-    list-style: none;
-}
-
-.nav__box .nav__box--home .nav__box--home--oficialPage:hover{
-    background-color: #65635e;
-    padding: 10px 15px;
-    border-radius: 5px;
-}
-.nav__box > ul > li{
-    list-style: none;
-}
-
-.nav__box .nav__box--sections{
-    display: none;
-}
-
-.nav__box .nav__box--sections li a{
-    padding: 10px 15px;
-}
-.nav__box .nav__box--sections li a:hover{
-    background-color: #65635e;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: .5s;
-    border-bottom: 1px solid #c49250;
-}
-
-.menu-desplegable{
-    max-width: 40px;
-
-}
-.menu-desplegable > a > img{
-    width: 100%;
-    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-
-
-
+.dropdown-menu{
+    background-color: #c49250;
+}
+.display-none{
+    display: none;
+}
+.display-none a{
+    color: #fff;
+}
+.dropdown a{
+    color: #Fff;
+}
+.nav-link:focus, .nav-link:hover{
+    color: #c49250;
+}
 /*ESTILOS DEL HOME / PRIMERA SECTION DE LA PAGINA*/
 .home{
     width: 100%;
@@ -190,7 +164,7 @@ hr{
 .section__game--box__video{
     position: relative;
     top: -20px;
-    width: 80%;
+    width: 90%;
     min-width: 320px;
     height: 350px;
     max-width: 90%;
@@ -576,8 +550,13 @@ hr{
 .main__header{
     padding: 70px 0px;
     width: 100%;
+    height: 400px;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../imgs/game-news-header.jpg");
+    background-position: center;
+    background-size: cover;
 }
 .main__header > img{
     width: 100%;
@@ -641,6 +620,12 @@ hr{
 }
 
 @media screen and (min-width: 768px){
+    .display-none{
+        display: block;
+    }
+    .menu-768{
+        display: none;
+    }
     .home__content-box .home__video video{
         width: 100%;
         max-height: 568px;

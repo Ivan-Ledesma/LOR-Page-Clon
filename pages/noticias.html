@@ -4,32 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/style.css">
     <title>Noticias - Game Card Page</title>
 </head>
 <body>
-    <nav class="nav__box">
-        <ul class="nav__box--home">
-            <li class="li-home"><a href="../index.html"><img src="../imgs/lor-logo.png" alt="logo-home"></a></li>
-            <li class="responsive-home"><a class="nav__box--home--oficialPage" href="https://playruneterra.com/es-es/" target="blank">Página Oficial</a></li>
-            <li class="responsive-home"><a class="nav__box--home--oficialPage" href="#">Noticias</a></li>
+    <nav class="nav__box w-100 g-0">
+        <ul class="nav nav-pills row">
+            <li class="container col-2 align-self-center ps-">
+                <a class="navbar-brand" href="../index.html">
+                  <img src="../imgs/lor-logo.png" alt="logo-home">
+                </a>
+            </li>
+            <li class="nav-item col align-self-center display-none">
+                <a class="nav-link" href="#">Noticias</a>
+            </li>
+            <li class="nav-item col align-self-center display-none">
+                <a class="nav-link" href="../index.html">Juego</a>
+            </li>
+            <li class="nav-item col align-self-center display-none">
+                <a class="nav-link" href="../index.html">Campeones</a>
+            </li>
+            <li class="nav-item col align-self-center display-none">
+                <a class="nav-link" href="../index.html">Regiones</a>
+            </li>
+            <li class="nav-item col align-self-center display-none">
+                <a class="nav-link" href="../index.html">Arte</a>
+            </li>
+            <li class="nav-item dropdown col-6 justify-content-end align-self-center menu-768">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+                <ul class="dropdown-menu w-100">
+                    <li><a class="dropdown-item" href="./pages/noticias.html">NOTICIAS</a></li>
+                    <li><a class="dropdown-item" href="#juego">Juego</a></li>
+                    <li><a class="dropdown-item" href="#campeones">Campeones</a></li>
+                    <li><a class="dropdown-item" href="#regiones">Regiones</a></li>
+                    <li><a class="dropdown-item" href="#arte">Arte</a></li>
+                </ul>
+            </li>
         </ul>
-        <ul class="nav__box--sections">
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="../index.html">Juego</a></li>
-            <li><a href="../index.html">Personajes</a></li>
-            <li><a href="../index.html">Regiones</a></li>
-            <li><a href="../index.html">Ilustraciones</a></li>
-        </ul>
-        <div class="menu-desplegable">
-            <a href="#" >
-                <img src="../imgs/menu-icon.svg" alt="">
-            </a>
-        </div>
     </nav>
     <main class="main body__background">
         <header class="main__header">
-            <img src="../imgs/game-news-header.jpg" alt="">
             <h1>NOTICIAS</h1>
         </header>
         <section class="main__sectionsNews">
@@ -87,5 +102,6 @@
 
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

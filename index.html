@@ -4,28 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/style.css">
     <title>Game Cards - Oficial Page</title>
 </head>
 <body>
-    <nav class="nav__box">
-        <ul class="nav__box--home">
-            <li class="li-home"><a href="#"><img src="./imgs/lor-logo.png" alt="logo-home"></a></li>
-            <li class="responsive-home"><a class="nav__box--home--oficialPage" href="https://playruneterra.com/es-es/" target="blank">Página Oficial</a></li>
-            <li class="responsive-home"><a class="nav__box--home--oficialPage" href="./pages/noticias.html">Noticias</a></li>
+    <nav class="nav__box w-100 g-0">
+        <ul class="nav nav-pills row">
+            <li class="container col-2 align-self-center ps-">
+                <a class="navbar-brand" href="#home">
+                  <img src="./imgs/lor-logo.png" alt="logo-home">
+                </a>
+            </li>
+            <li class="nav-item col align-self-center display-none">
+                <a class="nav-link" href="./pages/noticias.html">Noticias</a>
+            </li>
+            <li class="nav-item col align-self-center display-none">
+                <a class="nav-link" href="#juego">Juego</a>
+            </li>
+            <li class="nav-item col align-self-center display-none">
+                <a class="nav-link" href="#campeones">Campeones</a>
+            </li>
+            <li class="nav-item col align-self-center display-none">
+                <a class="nav-link" href="#regiones">Regiones</a>
+            </li>
+            <li class="nav-item col align-self-center display-none">
+                <a class="nav-link" href="#arte">Arte</a>
+            </li>
+            <li class="nav-item dropdown col-6 justify-content-end align-self-center menu-768">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+                <ul class="dropdown-menu w-100">
+                    <li><a class="dropdown-item" href="./pages/noticias.html">NOTICIAS</a></li>
+                    <li><a class="dropdown-item" href="#juego">Juego</a></li>
+                    <li><a class="dropdown-item" href="#campeones">Campeones</a></li>
+                    <li><a class="dropdown-item" href="#regiones">Regiones</a></li>
+                    <li><a class="dropdown-item" href="#arte">Arte</a></li>
+                </ul>
+            </li>
         </ul>
-        <ul class="nav__box--sections">
-            <li><a href="#home">Inicio</a></li>
-            <li><a href="#juego">Juego</a></li>
-            <li><a href="#personajes">Personajes</a></li>
-            <li><a href="#regiones">Regiones</a></li>
-            <li><a href="#ilustraciones">Ilustraciones</a></li>
-        </ul>
-        <div class="menu-desplegable">
-            <a href="#" >
-                <img src="./imgs/menu-icon.svg" alt="">
-            </a>
-        </div>
     </nav>
     <main class="main">
         <section class="home" id="home">
@@ -96,29 +112,49 @@
 
             </div>
         </section>
-        <section class="section__champions body__background" id="personajes">
+        <section class="section__champions body__background" id="campeones">
             <div class="section__champions--title"> 
                 <h2>ELIGE A TUS CAMPEONES</h2>
                 <p>¿A quién llevarás a la batalla?</p>
             </div>
-            <div class="section__champions--content">
-                <div class="section__champions--content-imgs">
-                    <button>-></button>
-                    <figure>
-                        <img src="./imgs/champion-background.png" alt="">
-                    </figure>
-                    <button>-></button>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
-                <div class="section__champions--content-description">
-                    <div class="section__champions--content-description--text">
-                        <p>Aguas Estancadas</p>
-                        <h2>MISS FORTUNE</h2>
-                        <p>Riesgo y recompensa</p>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./imgs/champion-background.png" class="d-block" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>First slide label</h5>
+                      <p>Some representative placeholder content for the first slide.</p>
                     </div>
-                    <hr>
-                    <p>Abre fuego contra el tablero enemigo y hazlos desaparecer con oleadas de daño.<p>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./imgs/champion-background.png" class="d-block" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Second slide label</h5>
+                      <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./imgs/champion-background.png" class="d-block" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Third slide label</h5>
+                      <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
                 </div>
-            </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
         </section>
         <section class="section__regions body__background" id="regiones">
             <div class="section__regions--title">
@@ -138,7 +174,7 @@
                 </div>
             </div>
         </section>
-        <section class="section__art body__background" id="ilustraciones">
+        <section class="section__art body__background" id="arte">
             <h2>ARTE VISUAL</h2>
             <h3>Ilustraciones de cartas</h3>
             <div class="section__art--ilustrations">
@@ -189,5 +225,6 @@
 
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
