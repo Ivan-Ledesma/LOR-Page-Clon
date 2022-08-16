@@ -1,0 +1,26 @@
+@import "./parciales/nav";
+@import "./parciales/mainNoticias";
+@import "./parciales/footer";
+@import "./base/mediaquerys";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    color: #Fff;
+}
+
+hr{
+    width: 90%;
+    border-width: 0;
+    border-top: 1px solid $naranjaPrincipal;
+    margin-bottom: 20px;
+    margin: 0 auto;
+}
