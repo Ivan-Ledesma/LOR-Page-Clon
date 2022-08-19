@@ -10,17 +10,16 @@
     background-image: url("../imgs/game-news-header.jpg");
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
     h1{
-        color: white;
-        font-size: 4rem;
-        text-align: center;
+        color: $white;
+        font-size: 6rem;
     }
 }
 
 .main__sectionsNews{
     width: 100%;
     padding-top: 40px;
-    font-size: 7rem;
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
@@ -33,9 +32,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 0 auto;
         text-align: center;
-        color: #Fff;
+        color: $white;
         padding: 40px 0;
         border-bottom: 1px solid $naranjaPrincipal;
         
@@ -47,12 +45,12 @@
             h3{
                 color: $naranjaPrincipal;
                 padding: 10px 0;
-                font-size: 1.1em;
+                font-size: 4rem;
             }
             p{
-                color: #fff;
+                color: $white;
                 padding: 10px 0;
-                font-size: 0.8em;
+                font-size: 3rem;
             }
         }
     }

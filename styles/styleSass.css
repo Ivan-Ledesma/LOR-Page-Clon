@@ -8,8 +8,6 @@
 .nav__box .nav {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 0;
-  margin-bottom: 0;
   list-style: none;
 }
 .nav__box .nav li a {
@@ -36,17 +34,16 @@
   background-image: url("../imgs/game-news-header.jpg");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .main__header h1 {
-  color: white;
-  font-size: 4rem;
-  text-align: center;
+  color: #fff;
+  font-size: 6rem;
 }
 
 .main__sectionsNews {
   width: 100%;
   padding-top: 40px;
-  font-size: 7rem;
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
@@ -59,9 +56,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
   text-align: center;
-  color: #Fff;
+  color: #fff;
   padding: 40px 0;
   border-bottom: 1px solid #c49250;
 }
@@ -72,12 +68,12 @@
 .main__sectionsNews .main__sectionNews--box div h3 {
   color: #c49250;
   padding: 10px 0;
-  font-size: 1.1em;
+  font-size: 4rem;
 }
 .main__sectionsNews .main__sectionNews--box div p {
   color: #fff;
   padding: 10px 0;
-  font-size: 0.8em;
+  font-size: 3rem;
 }
 
 .footer {
@@ -122,6 +118,297 @@
   padding: 8px 12px;
   color: #111;
   font-size: 2.2rem;
+}
+
+.home {
+  width: 100%;
+  color: #fff;
+}
+.home .home__content-box {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background: linear-gradient(transparent 5%, transparent 50%, #e4e0da, #ffffff);
+}
+.home .home__content-box .home__video video {
+  width: 100%;
+  height: 100vw;
+  max-height: 568px;
+  min-height: 530px;
+  object-fit: cover;
+  position: absolute;
+  padding-top: 10px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.home .home__content-box .home__button {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+}
+.home .home__content-box .home__button .play-now {
+  font-size: 3.5rem;
+  padding: 10px 20px;
+  background-color: #c49250;
+  box-shadow: #65635e;
+  border-radius: 5px;
+  background-color: rgb(152, 111, 69);
+}
+.home .home__content-box .home__button .play-now:hover {
+  background-color: #e1a75b;
+  transition: background-color 1s;
+}
+.home .home__content-box .home__button p {
+  padding: 10px 0;
+  font-size: 2.5rem;
+}
+.home .home__content-box .home__button ul {
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.home .home__content-box .home__button ul li {
+  width: 200px;
+  text-decoration: none;
+  list-style: none;
+  padding: 0 20px;
+}
+
+.section__game--box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin-top: 70px;
+}
+.section__game--box .section__game--box__video {
+  position: relative;
+  top: -20px;
+  width: 90%;
+  min-width: 320px;
+  height: 350px;
+  flex-shrink: 0;
+  z-index: 2;
+}
+.section__game--box .section__game--box__video iframe {
+  width: 100%;
+  height: 100%;
+}
+.section__game--box .section__game--box__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+.section__game--box .section__game--box__text h2 {
+  font-weight: 400;
+  color: #c49250;
+  font-size: 4rem;
+}
+.section__game--box .section__game--box__text p {
+  color: #fff;
+  font-weight: lighter;
+  font-size: 2.5rem;
+}
+
+.section__game-cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 80px 0;
+}
+.section__game-cards .section__game-cards--card {
+  position: relative;
+  z-index: 1;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 380px;
+  height: 550px;
+  background-color: #c6b7a0;
+}
+.section__game-cards .section__game-cards--card .section__game-cards--img {
+  overflow: hidden;
+}
+.section__game-cards .section__game-cards--card .section__game-cards--img img {
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 0;
+}
+.section__game-cards .section__game-cards--card .section__game-cards--text {
+  color: #5e442d;
+  font-weight: 200;
+  font-size: 3.2rem;
+  width: 90%;
+  height: 60%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.section__game-cards .section__game-cards--card .section__game-cards--text h3 {
+  font-size: 3rem;
+}
+
+.section__champions {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.section__champions .section__champions--title {
+  color: #c49250;
+  text-align: center;
+}
+.section__champions .section__champions--title h2 {
+  padding-bottom: 25px;
+  font-size: 4rem;
+}
+.section__champions .section__champions--title p {
+  font-size: 3rem;
+  padding-bottom: 25px;
+}
+
+.section__regions {
+  width: 100%;
+  height: auto;
+  padding: 80px 0;
+}
+.section__regions .section__regions--title {
+  text-align: center;
+  color: #c49250;
+}
+.section__regions .section__regions--title h2 {
+  font-size: 4rem;
+}
+.section__regions .section__regions--title p {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 2.5rem;
+}
+.section__regions .section__regions--content {
+  background-color: #34312e;
+  max-width: 90%;
+  height: auto;
+  min-height: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+.section__regions .section__regions--content .section__regions--content--title {
+  color: #c6b7a0;
+  padding: 30px 0;
+  width: 100%;
+  text-align: center;
+  background-color: #282624;
+  font-size: 4rem;
+}
+.section__regions .section__regions--content .section__regions--content--title h3 {
+  font-size: 4rem;
+}
+.section__regions .section__regions--content .section__regions--content--cards {
+  width: 100%;
+  padding: 40px 0;
+  border-top: 1px solid #c49250;
+  border-bottom: 1px solid #c49250;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr;
+  grid-gap: 10px;
+  justify-items: center;
+  align-items: center;
+}
+.section__regions .section__regions--content .section__regions--content--cards img {
+  width: 100%;
+  max-width: 350px;
+}
+.section__regions .section__regions--content .section__regions--content--cards img:hover {
+  transition: 0.5s;
+  transform: scale(1.05);
+}
+
+.section__art {
+  width: 100%;
+  padding: 40px 0;
+  text-align: center;
+}
+.section__art h2 {
+  text-align: center;
+  color: #c49250;
+  font-size: 4rem;
+}
+.section__art h3 {
+  color: #fff;
+  font-weight: 300;
+  padding-top: 20px;
+  font-size: 3rem;
+}
+
+.section__art--ilustrations {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px 0;
+  font-size: 6rem;
+}
+.section__art--ilustrations .section__art--ilustrations--figures {
+  width: 500px;
+  color: #c6b7a0;
+  border-bottom: 1px solid #e8ac5f;
+  overflow: hidden;
+}
+.section__art--ilustrations .section__art--ilustrations--figures img {
+  width: 100%;
+}
+.section__art--ilustrations .section__art--ilustrations--figures img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.section__art--ilustrations .section__art--ilustrations--figures div {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 3rem;
+  padding-bottom: 10px;
+}
+.section__art--ilustrations .section__art--ilustrations--figures div a {
+  border: 1px solid #c6b7a0;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+.section__art--ilustrations .section__art--ilustrations--figures div a:hover {
+  border: 1px solid #c49250;
+  background-color: #c49250;
+  color: #111;
+  transition: 0.5s;
 }
 
 @media screen and (min-width: 768px) {
@@ -262,6 +549,16 @@ hr {
   border-top: 1px solid #c49250;
   margin-bottom: 20px;
   margin: 0 auto;
+}
+
+.main {
+  height: auto;
+  width: 100%;
+}
+
+.body__background {
+  background: url("../imgs/background-dark-grey-noise.jpg");
+  height: auto;
 }
 
 /*# sourceMappingURL=styleSass.css.map */
