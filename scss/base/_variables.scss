@@ -1,3 +1,20 @@
 $naranjaPrincipal: #c49250;
 $marron: #5e442d;
 $white : #fff;
+$black : #111;
+$marronClaro : #c6b7a0;
+$marronOscuro : #282624;
+
+
+$palette:(
+    'naranjaPrincipal' : #c49250,
+    'marron': #5e442d,
+    'white': #fff,
+    'black': #111
+);
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}

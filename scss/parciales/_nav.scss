@@ -5,7 +5,7 @@
     padding-right: 10px;
     background-color: #111;
     padding: 10px 5px;
-    .nav {
+    .nav{
         display: flex;
         flex-wrap: wrap;
         list-style: none;
@@ -20,7 +20,7 @@
             color: $naranjaPrincipal;
         }
         .dropdown-menu{
-            background-color: $naranjaPrincipal;
+            background-color: map-get($map: $palette, $key: 'naranjaPrincipal');
         }
 
     }

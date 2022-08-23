@@ -2,21 +2,73 @@
     .section__game--box__video{
         height: 450px;
     }
-    .footer__links-externalLinks > li > a:hover{
-        background-color: $naranjaPrincipal;
-        padding: 8px 12px;
-        border-radius: 4px;
-        color: #111;
+    .section__regions{
+        .section__regions--content{
+            .section__regions--content--cards{
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 2fr;
+                img{
+                    width: 100%;
+                    max-width: 350px;
+                }
+                img:hover{
+                    transition:0.5s;
+                    transform: scale(1.05);
+                }
+            }
+        }
     }
-    .section__regions--content--cards{
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: 1fr 1fr;
+}
+
+@media screen and (min-width: 1024px){
+    .section__game--box__video{
+        min-height: 500px;
     }
-    .main__header > h1{
-        font-size: 6rem;
+    .section__game--box__text p{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .section__champions--content-description{
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .section__champions--content-description p{
+        font-size: 2.8rem;
+    }
+    .section__champions--content-description--text p{
+        font-size: 2.5rem;
+    }
+    .section__champions--content-description--text h2{
+        font-size: 4rem;
+    }
+    .section__champions--content-description--text h2{
+        font-size: 4rem;
+    }
+
+    .section__regions--title p{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .footer__copyright{
+        padding: 20px 0;
+    }
+    .footer__links-externalLinks > li > a{
+        font-size: 2.5rem;
+    }
+    /* Pagina de noticias*/
+    .main__sectionNews--box{
+        justify-content: center;
+        flex-direction: row;
+    }
+    .main__sectionNews--box > img{
+        max-width: 50%;
+        padding-right: 10px;
     }
 
 }
+
 @media screen and (min-width: 1280px){
     .nav__box--sections{
         max-width: 40%;
@@ -66,60 +118,4 @@
     }
 }
 
-@media screen and (min-width: 1024px){
-    .nav__box--sections{
-        width: 50%;
-        display: flex!important;
-        align-items: center;
-        justify-content: space-around;
-    }
-    .menu-desplegable{
-        display: none;
-    }
-    .nav__box--home{
-        max-width: 50%;
-    }
-    .section__game--box__text p{
-        width: 80%;
-        margin: 0 auto;
-    }
-    .section__champions--content-description{
-        height: 200px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-    .section__champions--content-description p{
-        font-size: 2.8rem;
-    }
-    .section__champions--content-description--text p{
-        font-size: 2.5rem;
-    }
-    .section__champions--content-description--text h2{
-        font-size: 4rem;
-    }
-    .section__champions--content-description--text h2{
-        font-size: 4rem;
-    }
 
-    .section__regions--title p{
-        width: 80%;
-        margin: 0 auto;
-    }
-    .footer__copyright{
-        padding: 20px 0;
-    }
-    .footer__links-externalLinks > li > a{
-        font-size: 2.5rem;
-    }
-    /* Pagina de noticias*/
-    .main__sectionNews--box{
-        justify-content: center;
-        flex-direction: row;
-    }
-    .main__sectionNews--box > img{
-        max-width: 50%;
-        padding-right: 10px;
-    }
-
-}

@@ -18,13 +18,7 @@
 }
 
 .main__sectionsNews{
-    width: 100%;
-    padding-top: 40px;
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-    justify-content: space-between;
-    align-items: center;
+    @extend .section__champions;
 
     .main__sectionNews--box{
         width: 80%;
