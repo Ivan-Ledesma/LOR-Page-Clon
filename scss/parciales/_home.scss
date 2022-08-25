@@ -9,19 +9,14 @@
         justify-content: flex-end;
         align-items: center;
         background: linear-gradient(transparent 5%,transparent 50%,#e4e0da,#ffffff);
-        .home__video{
-            video{
+        .home__background{
+            img{
                 width: 100%;
                 height: 100vw;
-                max-height: 568px;
-                min-height: 530px;
                 object-fit: cover;
-                position: absolute;
                 padding-top: 10px;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
+                position: relative;
+                top: 60px;
                 z-index: -1;
             }
         }
@@ -42,10 +37,12 @@
             .play-now:hover{
                 background-color: #e1a75b;
                 transition: background-color 1s;
+                color: $white;
             }  
             p{
-                padding: 10px 0;
+                padding-top: 10px;
                 font-size: 2.5rem;
+                color: $black;
             }
             ul{
                 padding: 15px 0;
@@ -57,10 +54,8 @@
                     width: 200px;
                     text-decoration: none;
                     list-style: none;
-                    padding: 0 20px;
                 }   
             }   
-            
         }
     }
 }

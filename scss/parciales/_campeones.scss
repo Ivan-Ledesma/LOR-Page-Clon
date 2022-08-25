@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    .section__champions--title{
+        .section__champions--title{
         color: #c49250;
         text-align: center;
         h2 {
@@ -17,5 +17,37 @@
             font-size: 3rem;
             padding-bottom: 25px;
         }
+    }
+    .carousel-item{
+        width: 100%;
+        .carousel-img{
+            width: 100%;
+            min-height: 300px;
+            position: relative;
+            object-fit: cover;
+        }
+        .title-champion-background{
+            position: relative;
+            left: 0;
+            top: -50px;
+            background-color: $oscuroTransparente;
+            .slide-title{
+                color: $marronClaro;
+                font-size: 5rem;
+            }
+            .slide-text-p{
+                font-size: 2rem;
+                font-weight: 300;
+            }
+        }
+    }
+    .carousel-button{
+        margin: auto auto;
+        width: fit-content;
+        height: fit-content;
+        background-color: $black;
+        padding: 10px;
+        border-radius: 100%;
+        border: 1px solid $naranjaPrincipal;
     }
 }

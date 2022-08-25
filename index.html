@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Elige a tus campeones, juega tu mano y el mejor en el juego de cartas de estrategia de League of Legends: Legends of Runeterra. Juega gratis ahora.">
+    <meta name="keywords" content="juego,estrategia,gratis,cartas,multijugador,online,dinámico,riot,">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/styleSass.css">
     <title>Game Cards - Oficial Page</title>
 </head>
 <body>
@@ -33,7 +34,7 @@
                 <a class="nav-link" href="#arte">Arte</a>
             </li>
             <li class="nav-item dropdown col-6 justify-content-end align-self-center d-md-none">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Menú</a>
                 <ul class="dropdown-menu w-100">
                     <li><a class="dropdown-item" href="./pages/noticias.html">NOTICIAS</a></li>
                     <li><a class="dropdown-item" href="#juego">Juego</a></li>
@@ -47,18 +48,16 @@
     <main class="main">
         <section class="home" id="home">
             <div class="home__content-box">
-                <div  class="home__video">
-                    <video autoplay loop>
-                        <source src="./imgs/lor-path-champs-hero.mp4" type="video/mp4">
-                    </video>
+                <div  class="home__background">
+                    <img src="./imgs/LorHomeBackground.jpg" alt="imagén promocional del juego">
                 </div>
                 <div class="home__button">
                     <a class="play-now" href="">Jugar Ahora</a>
                     <p>Disponible en</p>
                     <ul>
-                        <li><a href=""><img src="./imgs/pc-version-es.svg" alt=""></a></li>
-                        <li><a href=""><img src="./imgs/app-store-es.svg" alt=""></a></li>
-                        <li><a href=""><img src="./imgs/google-play-es_get.svg" alt=""></a></li>
+                        <li><a href="#"><img src="./imgs/pc-version-es.svg" alt=""></a></li>
+                        <li><a href="#"><img src="./imgs/app-store-es.svg" alt=""></a></li>
+                        <li><a href="#"><img src="./imgs/google-play-es_get.svg" alt=""></a></li>
                     </ul>
                 </div>
             </div>
@@ -111,41 +110,39 @@
                 <h2>ELIGE A TUS CAMPEONES</h2>
                 <p>¿A quién llevarás a la batalla?</p>
             </div>
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators ">
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
+            <div id="carouselExampleCaptions" class="carousel slide carousel-container" data-bs-ride="carousel">
                 <div class="carousel-inner p-2">
                   <div class="carousel-item active">
-                    <img class="carousel-img w-100" src="./imgs/champion-background.png" class="d-block" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>First slide label</h5>
-                      <p>Some representative placeholder content for the first slide.</p>
+                    <img class="carousel-img" src="./imgs/champion-background.png" class="d-block" alt="...">
+                    <div class="carousel-caption d-md-block title-champion-background">
+                      <h5 class="display-4 slide-title">Darius</h5>
+                      <hr class="m-sm-5">
+                      <p class="carousel-caption-text w-75 m-auto slide-text-p">Aplasta a tus rivales más débiles con el poder de Noxus y condénalos a una ejecución imparable.</p>
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <img class="carousel-img w-100" src="./imgs/champion-background.png" class="d-block" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Second slide label</h5>
-                      <p>Some representative placeholder content for the second slide.</p>
+                    <img class="carousel-img"  src="./imgs/champion-background-2.png" class="d-block" alt="...">
+                    <div class="carousel-caption d-md-block title-champion-background">
+                      <h5 class="display-4 slide-title">Thresh</h5>
+                      <hr class="m-sm-5">
+                      <p class="carousel-caption-text w-75 m-auto slide-text-p">Arrastra a tus víctimas hasta su perdición y absorbe sus almas para que un poderoso aliado te acompañe en la batalla.</p>
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <img class="carousel-img w-100" src="./imgs/champion-background.png" class="d-block" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Third slide label</h5>
-                      <p>Some representative placeholder content for the third slide.</p>
+                    <img class="carousel-img" src="./imgs/champion-background-3.png" class="d-block" alt="...">
+                    <div class="carousel-caption d-md-block title-champion-background">
+                      <h5 class="display-4 slide-title">Aurelion</h5>
+                      <hr class="m-sm-5">
+                      <p class="carousel-caption-text w-75 m-auto slide-text-p">Llama a poderosos Celestiales e imponentes dragones para ayudarte, y después derrota a tus enemigos con el poder del cielo y las estrellas.</p>
                     </div>
                   </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <button class="carousel-control-prev carousel-button" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon " aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <button class="carousel-control-next carousel-button" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon " aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
@@ -162,9 +159,9 @@
                 </div>
                 <div class="section__regions--content--cards">
                     <img src="./imgs/region-card.png" alt="carta-de-heroe">
-                    <img src="./imgs/region-card.png" alt="carta-de-heroe">
-                    <img src="./imgs/region-card.png" alt="carta-de-heroe">
-                    <img src="./imgs/region-card.png" alt="carta-de-heroe">
+                    <img src="./imgs/region-card-2.png" alt="carta-de-heroe">
+                    <img src="./imgs/region-card-3.png" alt="carta-de-heroe">
+                    <img src="./imgs/region-card-4.png" alt="carta-de-heroe">
                 </div>
             </div>
         </section>
@@ -181,7 +178,7 @@
                     </div>
                 </figure>
                 <figure class="section__art--ilustrations--figures">
-                    <img src="./imgs/art-card-ilustration.jpg" alt="art-card-ilustration">
+                    <img src="./imgs/art-card-ilustration-2.jpg" alt="art-card-ilustration">
                     <p>Lux ( nivel 1 )</p>
                     <div>
                         <p>PNG - 2.2 MB</p>
@@ -189,7 +186,7 @@
                     </div>
                 </figure>
                 <figure class="section__art--ilustrations--figures">
-                    <img src="./imgs/art-card-ilustration.jpg" alt="art-card-ilustration">
+                    <img src="./imgs/art-card-ilustration-3.jpg" alt="art-card-ilustration">
                     <p>Lux ( nivel 1 )</p>
                     <div>
                         <p>PNG - 2.2 MB</p>
@@ -200,14 +197,10 @@
         </section>
     </main>
     <footer class="footer" id="footer">
-        <ul class="footer__links-socialNetworks m-0">
-            <li>
-                <a href="#">
-                    <img src="./imgs/instagram-brands.svg" alt="logo-instagram">
-                </a>
-            </li>
-            <li><a href="#"><img src="./imgs/twitter-square-brands.svg" alt="logo-twitter"></a></li>
+        <ul class="footer__links-socialNetworks m-auto">
+            <li><a href="#"><img src="./imgs/instagram-brands.svg" alt="logo-instagram"></a></li>
             <li><a href="#"><img src="./imgs/youtube-brands.svg" alt="logo-youtube"></a></li>
+            <li><a href="#"><img src="./imgs/twitter-square-brands.svg" alt="logo-twitter"></a></li>
         </ul>
         <p class="footer__copyright">© 2022 Riot Games, Inc.</p>
         <ul class="footer__links-externalLinks m-0">    
@@ -215,8 +208,16 @@
             <li><a href="#">Términos de uso</a></li>
             <li><a href="#">Información de la empresa</a></li>
         </ul>
-        <div>
-
+        <div class="footer__pegi">
+            <img src="./imgs/pegi18.png" alt="ESRB adolescentes">
+            <ul class="footer__pegi--list">
+                <li>Referencia a alcohol</li>
+                <li>Sangre</li>
+                <li>Violencia fantasía</li>
+                <li>Temas insinuantes moderados</li>
+                <li>Interacción de usuarios</li>
+                <li>Compras dentro del juego</li>
+            </ul>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

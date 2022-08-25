@@ -15,7 +15,7 @@
         }
     }
     .section__regions--content{
-        background-color: #34312e;
+        background-color: $marronOscuro;
         max-width: 90%;
         height: auto;
         min-height: 500px;
@@ -40,13 +40,11 @@
             width: 100%;
             padding: 40px 0;
             border-top: 1px solid $naranjaPrincipal;
-            border-bottom: 1px solid $naranjaPrincipal;
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 3fr;
-            grid-gap: 10px;
-            justify-items: center;
+            border-bottom: 1px solid $naranjaPrincipal; 
+            display: flex;
+            justify-content: space-around;
             align-items: center;
+            flex-wrap: wrap;
             img{
                 width: 100%;
                 max-width: 350px;

@@ -1,19 +1,22 @@
-@media screen and (min-width: 768px){
-    .section__game--box__video{
-        height: 450px;
-    }
-    .section__regions{
-        .section__regions--content{
-            .section__regions--content--cards{
-                grid-template-columns: 1fr 1fr;
-                grid-template-rows: 2fr;
+@media screen and (min-width: 420px){
+    //Tamaño del imagen de background en en la primera section
+    .home{
+        .home__content-box{
+            .home__background{
                 img{
-                    width: 100%;
-                    max-width: 350px;
+                    max-height: 400px;
                 }
-                img:hover{
-                    transition:0.5s;
-                    transform: scale(1.05);
+            }
+        }
+    }
+}
+@media screen and (min-width: 768px){
+    //Tamaño del imagen de background en en la primera section
+    .home{
+        .home__content-box{
+            .home__background{
+                img{
+                    max-height: 450px;
                 }
             }
         }
@@ -21,101 +24,46 @@
 }
 
 @media screen and (min-width: 1024px){
-    .section__game--box__video{
-        min-height: 500px;
+    .section__game{
+        .section__game--box{
+            .section__game--box__video{
+                max-width: 1000px;
+                min-height: 500px;
+            }
+            .section__game--box__text p{
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
     }
-    .section__game--box__text p{
+    .carousel-container{
         width: 80%;
-        margin: 0 auto;
-    }
-    .section__champions--content-description{
-        height: 200px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-    .section__champions--content-description p{
-        font-size: 2.8rem;
-    }
-    .section__champions--content-description--text p{
-        font-size: 2.5rem;
-    }
-    .section__champions--content-description--text h2{
-        font-size: 4rem;
-    }
-    .section__champions--content-description--text h2{
-        font-size: 4rem;
+        .slide-text-p{
+            font-size: 2.5rem!important;
+        }
     }
 
-    .section__regions--title p{
-        width: 80%;
-        margin: 0 auto;
-    }
-    .footer__copyright{
-        padding: 20px 0;
-    }
-    .footer__links-externalLinks > li > a{
-        font-size: 2.5rem;
-    }
     /* Pagina de noticias*/
-    .main__sectionNews--box{
-        justify-content: center;
-        flex-direction: row;
+    .main__sectionsNews{
+        .main__sectionNews--box{
+            max-width: 1060px;
+            display: flex;
+            flex-direction: row;
+            img{
+                width: 100%;
+                max-width: 500px;
+            }
+        }
     }
-    .main__sectionNews--box > img{
-        max-width: 50%;
-        padding-right: 10px;
-    }
-
 }
 
 @media screen and (min-width: 1280px){
-    .nav__box--sections{
-        max-width: 40%;
-        font-size: 6rem;
+    .home__background{
+        img{
+            max-height: 550px;
+        }
     }
 
-    .nav__box--home{
-        max-width: 40%;
-        font-size: 6rem;
-    }
-
-    .section__game--box__video{
-        height: 440px;
-    }
-    .section__game--box__text{
-        padding: 40px 20px;
-        gap: 40px;
-    }
-    .section__champions--title{
-        padding: 40px 0;
-    }
-    .section__champions--content-imgs{
-        width: 90%;
-        margin: 0 auto;
-    }
-    .section__champions--content-description{
-        width: 80%;
-    }
-    .section__regions--title p{
-        padding: 20px 0;
-    }
-    .section__regions--content--cards{
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: 1fr;
-    }
-    .section__art--ilustrations{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .section__art--ilustrations--figures{
-        width: auto;
-        max-width: 800px;
-    }
-    .footer__links-externalLinks{
-        justify-content: space-evenly;
-    }
 }
 
 
