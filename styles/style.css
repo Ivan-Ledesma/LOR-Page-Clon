@@ -197,7 +197,7 @@
 }
 .section__game--box .section__game--box__video {
   position: relative;
-  top: -20px;
+  top: -60px;
   width: 90%;
   min-width: 320px;
   height: 350px;
@@ -352,7 +352,6 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-top: 40px;
 }
 .section__regions .section__regions--content .section__regions--content--title {
   padding: 40px 0;
@@ -417,6 +416,7 @@
 }
 .section__art--ilustrations .section__art--ilustrations--figures img {
   width: 100%;
+  padding-bottom: 20px;
 }
 .section__art--ilustrations .section__art--ilustrations--figures img:hover {
   transform: scale(1.1);
@@ -502,11 +502,6 @@ hr {
   border-width: 0;
   border-top: 1px solid #c49250;
   margin: 0 auto;
-}
-
-.main {
-  height: auto;
-  width: 100%;
 }
 
 .body__background {
